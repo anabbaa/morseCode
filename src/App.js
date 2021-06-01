@@ -1,13 +1,14 @@
 
-import React,  { useState } from "react";
+import React from "react";
 import Header from "./components/Header";
+import Message from "./components/Message";
 
 function App() {
-  //const [print, setPrint] = useState(""); 
 
   return (
     <React.Fragment>
 <Header />
+<Message />
 </React.Fragment>
 
   );
