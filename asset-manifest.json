@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.js": "/mosreCode/static/js/main.f764c89c.chunk.js",
+    "main.js.map": "/mosreCode/static/js/main.f764c89c.chunk.js.map",
+    "runtime-main.js": "/mosreCode/static/js/runtime-main.932dbcb4.js",
+    "runtime-main.js.map": "/mosreCode/static/js/runtime-main.932dbcb4.js.map",
+    "static/js/2.4e55f121.chunk.js": "/mosreCode/static/js/2.4e55f121.chunk.js",
+    "static/js/2.4e55f121.chunk.js.map": "/mosreCode/static/js/2.4e55f121.chunk.js.map",
+    "index.html": "/mosreCode/index.html",
+    "static/js/2.4e55f121.chunk.js.LICENSE.txt": "/mosreCode/static/js/2.4e55f121.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.932dbcb4.js",
+    "static/js/2.4e55f121.chunk.js",
+    "static/js/main.f764c89c.chunk.js"
+  ]
+}
