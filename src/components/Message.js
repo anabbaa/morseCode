@@ -83,13 +83,25 @@ props.setUserinput(e.target.value);
     
 
 
-return (<div>
-        <input type="text" value={props.userinput} onChange={handelinfo}/>
+return (<div className="container">
+        <textarea rows="10"
+      cols="10" type="text"placeholder="Enter your text" 
+      value={props.userinput}  onChange={handelinfo}/>
+        <br/>
+        <br/>
+        <br/>
+
+
         <button onClick={convertToMorse}>Morse</button>
-    
+        <br/>
+        <br/>
+        <br/>
+
+
         <textarea
-      rows="44"
-      cols="44"
+      rows="10"
+      cols="10"
+      placeholder="Your Morsetext will appear here" 
 
       value={props.result}
     ></textarea>

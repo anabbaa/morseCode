@@ -1,5 +1,5 @@
 
 const Header = (props)=>{
-    return <div> Translate to Morse</div>
+    return <h1> Translate to Morse</h1>
 };
 export default Header;
