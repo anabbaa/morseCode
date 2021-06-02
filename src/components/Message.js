@@ -1,44 +1,99 @@
-import React, {useState} from "react";
+import React from "react";
 
 
 
 
-    const code =  {
-        "alpha" : ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l",
-         "m", "n", "o", "p", "q", "r","s", "t", "u", "v", "w", "x", "y",
-          "z", "1", "2", "3", "4", "5", "6", "7", "8", "9", "0", "!", ",", "?",
-			".", "'" ],
+const MorseCode = {
+    A: ".-",
+    B: "-...",
+    C: "-.-.",
+    D: "-..",
+    E: ".",
+    F: "..-.",
+    G: "--.",
+    H: "....",
+    I: "..",
+    J: ".---",
+    K: "-.-",
+    L: ".-..",
+    M: "--",
+    N: "-.",
+    O: "---",
+    P: ".--.",
+    Q: "--.-",
+    R: ".-.",
+    S: "...",
+    T: "-",
+    U: "..-",
+    V: "...-",
+    W: ".--",
+    X: "-..-",
+    Y: "-.--",
+    Z: "--..",
+    0: "-----",
+    1: ".----",
+    2: "..---",
+    3: "...--",
+    4: "....-",
+    5: ".....",
+    6: "-....",
+    7: "--...",
+    8: "---..",
+    9: "----.",
+    ".": ".-.-.-",
+    ",": "--..--",
+    "?": "..--..",
+    "!": "-.-.--",
+    }; 
 
-"morse" : [".-", "-...", "-.-.", "-..", ".", "..-.", "--.", "....", "..", ".---", "-.-", ".-..",
-			"--", "-.", "---", ".--.", "--.-", ".-.", "...", "-", "..-", "...-", ".--", "-..-", "-.--", "--..", ".----",
-			"..---", "...--", "....-", ".....", "-....", "--...", "---..", "----.", "-----", "-.-.--", "--..--",
-			"..--..", ".-.-.-", ".----.",]
+const Message = (props)=>{
 
-        };
-const Message = ()=>{
-    
-const [userinput, setUserinput] = useState("");
+
+        
 function handelinfo(e)
 
 {
 
-setUserinput(e.target.value);
+props.setUserinput(e.target.value);
+
 
 }
-    return (<div>
-        <input type="text" value={userinput} onChange={handelinfo}/>
-        <input type="text" />
+
+
+ 
+    function convertToMorse() {
 
         
-        
+        props.setResult(props.userinput
+            .toLowerCase()
+            .split("")
+            .map((el)=>{
+                if (el === MorseCode.key ){
+                    props.result = MorseCode.value.join("");
 
+                }
+                return props.result;
+            
+            }));
+            props.setUserinput("");
+            
 
     
+    }
+    
+
+
+return (<div>
+        <input type="text" value={props.userinput} onChange={handelinfo}/>
+        <button onClick={convertToMorse}>Morse</button>
+    
+        <textarea
+      rows="44"
+      cols="44"
+
+      value={props.result}
+    ></textarea>
     </div>
-    
     );
-
 }
-    
-
 export default Message;
