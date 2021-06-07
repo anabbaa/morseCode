@@ -1,21 +1,74 @@
 
 import React, {useState}from "react";
 import Header from "./components/Header";
-import Message from "./components/Message";
+import Data from "./data.json";
+
+
+
 
 function App() {
-  const [userinput, setUserinput] = useState("");
-  const [result, setResult] = useState("");
+  const [userInput, setUserInput] = useState("");
+  const [info, setInfo] = useState(Data);
+  const [translatedText, setTranslatedText] = useState("");
 
 
+
+
+  function handelInfo(e)
+
+{
+
+setUserInput(e.target.value);
+
+
+}
+
+function translated(e){
+  e.preventDefault();
+let text = userInput;
+  let result = "";
+  for (let i = 0; i < text.length; i++) {
+      result += " " + info[text[i].toLowerCase()];
+    }
+    setTranslatedText(result);
+
+  }
+  
   return (
     <React.Fragment>
-<Header />
-<Message userinput={userinput} setUserinput={setUserinput} 
-result={result} setResult={setResult}  />
-</React.Fragment>
+      <Header />
+      <form>
+        <div className="container">
+          <div className="Input">Input Message:</div>
+          <textarea
+          info = {info}
+            cols="50"
+            rows="8"
+            onChange={handelInfo}
+            onKeyUp={translated}
 
+            placeholder="Type a message here"
+          />
+        </div>
+        
+        <div className="container">
+          <div className="Output"> Output Message:</div>
+          <textarea
+            cols="50"
+            rows="8"
+            placeholder="Here comes Morse code"
+            value={translatedText}
+            readOnly
+          />
+        </div>
+          
+      
+      </form>
+    </React.Fragment>
   );
-}
+};
+
+
+  
 
 export default App;

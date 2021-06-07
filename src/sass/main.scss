@@ -20,15 +20,16 @@ textarea{
     width: 44vw;
     font-size: 2rem;
 }
-button{
-    width: 12vh;
-    height: 4vw;
-    font-size: 2rem;
-    color: blue;
-    margin-left: 20vw;
-}
+
 h1{
     color: red;
     font-size: 2rem;
     text-align: center;
+}
+.Input , .Output{
+    background-color: olive;
+    height: 16vh;
+    width: 44.5vw;
+    text-align: center;
+    font-size: 3rem;
 }
