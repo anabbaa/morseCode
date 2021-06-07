@@ -1,2 +1,0 @@
-(this.webpackJsonpmorsecode=this.webpackJsonpmorsecode||[]).push([[0],{9:function(e,t,c){"use strict";c.r(t);var n=c(1),r=c.n(n),o=c(3),s=c.n(o),d=c(0);var i=function(){return Object(d.jsx)("div",{})};s.a.render(Object(d.jsx)(r.a.StrictMode,{children:Object(d.jsx)(i,{})}),document.getElementById("root"))}},[[9,1,2]]]);
-//# sourceMappingURL=main.f764c89c.chunk.js.map
