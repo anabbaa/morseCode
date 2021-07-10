@@ -3,26 +3,15 @@ import React, {useState}from "react";
 import Header from "./components/Header";
 import Data from "./data.json";
 
-
-
-
 function App() {
   const [userInput, setUserInput] = useState("");
   const [info, setInfo] = useState(Data);
   const [translatedText, setTranslatedText] = useState("");
 
-
-
-
-  function handelInfo(e)
-
-{
+  function handelInfo(e){
 
 setUserInput(e.target.value);
-
-
 }
-
 function translated(e){
   e.preventDefault();
 let text = userInput;
@@ -41,12 +30,10 @@ let text = userInput;
         <div className="container">
           <div className="Input">Input Message:</div>
           <textarea
-          info = {info}
             cols="50"
             rows="8"
             onChange={handelInfo}
             onKeyUp={translated}
-
             placeholder="Type a message here"
           />
         </div>
@@ -61,8 +48,6 @@ let text = userInput;
             readOnly
           />
         </div>
-          
-      
       </form>
     </React.Fragment>
   );
