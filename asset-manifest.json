@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/mosreCode/static/css/main.8550349a.chunk.css",
-    "main.js": "/mosreCode/static/js/main.ffecef77.chunk.js",
-    "main.js.map": "/mosreCode/static/js/main.ffecef77.chunk.js.map",
+    "main.js": "/mosreCode/static/js/main.365a9e63.chunk.js",
+    "main.js.map": "/mosreCode/static/js/main.365a9e63.chunk.js.map",
     "runtime-main.js": "/mosreCode/static/js/runtime-main.932dbcb4.js",
     "runtime-main.js.map": "/mosreCode/static/js/runtime-main.932dbcb4.js.map",
     "static/js/2.5a180d86.chunk.js": "/mosreCode/static/js/2.5a180d86.chunk.js",
@@ -15,6 +15,6 @@
     "static/js/runtime-main.932dbcb4.js",
     "static/js/2.5a180d86.chunk.js",
     "static/css/main.8550349a.chunk.css",
-    "static/js/main.ffecef77.chunk.js"
+    "static/js/main.365a9e63.chunk.js"
   ]
 }
