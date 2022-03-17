@@ -4,17 +4,14 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    height: 100vh;
+    width: 100vw;
 }
 .container{
-    height: 44vh;
-    width: 22vw;
-    margin-right: 33vh;
+    height: 50%;
+    width: 50%;
 }
-input{
-    height: 22vh;
-    width: 44vw;
-    font-size: 2rem;
-}
+
 textarea{
     height: 22vh;
     width: 44vw;
@@ -25,11 +22,21 @@ h1{
     color: red;
     font-size: 2rem;
     text-align: center;
+    width: auto;
 }
 .Input , .Output{
     background-color: olive;
     height: 16vh;
-    width: 44.5vw;
+    width: 44.3vw;
     text-align: center;
     font-size: 3rem;
+}
+@media only screen and (max-width: 500px) {
+    .Input, .Output{
+        font-size: 2rem;
+        width: 70vw;
+    }
+    textarea{
+        width: 70vw;
+    }
 }
